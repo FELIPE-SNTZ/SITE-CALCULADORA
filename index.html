@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form name="calculo" class="calculator">
+        <img src="images.jpg" alt="">
+    <input type="text" name="num" id="display" disabled>
+   
+    
+    <div class="divOperacao">
+        <button class="button operation" onclick="valsto()">M+</button>
+        <button class="button operation"  onclick="dec()">M-</button>
+        <button class="button operation " onclick="exib()">MR</button>
+        <button class="button operation clear"  onclick="rem()">MC</button>
+
+        <button class="button operation" onclick="addToDisplay('+')">+</button>
+        <button class="button operation" onclick="addToDisplay('-')">-</button>
+        <button class="button operation" onclick="addToDisplay('*')">x</button>
+        <button class="button operation" onclick="addToDisplay('/')">&divide;</button>
+        
+    </div>
+    
+    <div class="numpads">
+        <button class="button num" onclick="addToDisplay(9)">9</button>
+        <button class="button num" onclick="addToDisplay(8)">8</button>
+        <button class="button num" onclick="addToDisplay(7)">7</button>
+        <button class="button num" onclick="addToDisplay(6)">6</button>
+        <button class="button num" onclick="addToDisplay(5)">5</button>
+        <button class="button num" onclick="addToDisplay(4)">4</button>
+        <button class="button num" onclick="addToDisplay(3)">3</button>
+        <button class="button num" onclick="addToDisplay(2)">2</button>
+        <button class="button num" onclick="addToDisplay(1)">1</button>
+        <button class="button num" onclick="addToDisplay(0)">0</button>
+        <button class=" button equal" onclick="calculate()">=</button>
+        <input class="button clear" type="reset" value="C">
+    </div>
+    
+    
+    </form>
+
+    <p>
+         | FELIPE-SNTZ |
+    
+    </p>
+   <script src="script.js"></script> 
+</body>
+</html> 
